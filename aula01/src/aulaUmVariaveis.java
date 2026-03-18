@@ -1,4 +1,4 @@
-public class Aula01 {
+public class aulaUmVariaveis {
     public static void main(String[] args) {
         //Saida de dados.
         System.out.println(5 + 5);
