@@ -37,10 +37,8 @@ public class exerciciosCondicionais {
 //
 //        if (idadeUsuario >= 18) {
 //            System.out.println("Voce e maior de idade");
-//        } else if (idadeUsuario < 18) {
+//        } else {
 //            System.out.println("Voce e menor de idade");
-//        }else {
-//            System.out.println("Voce veio do futuro");
 //        }
 
         // Exercício 4 — Classificação de Nota
@@ -142,7 +140,7 @@ public class exerciciosCondicionais {
 //        int numeroDois = scanner.nextInt();
 //
 //        System.out.println("Escola um operador");
-//        System.out.println("1. + ");
+//        System.out.println("1. +");
 //        System.out.println("2. -");
 //        System.out.println("3. *");
 //        System.out.println("4. /");
@@ -163,8 +161,8 @@ public class exerciciosCondicionais {
 //                System.out.printf("A multiplicação dos numeros é %s", multiplicacao);
 //                break;
 //            case 4 :
-//                double divisão = numeroUm / numeroDois;
-//                System.out.printf("A divisao dos numeros é %.2f", divisão);
+//                double divisao = (double) numeroUm / numeroDois;
+//                System.out.printf("A divisão dos numeros é %.2f", diviso);
 //                break;
 //            default:
 //                System.out.println("Opcao invalida");
@@ -195,7 +193,7 @@ public class exerciciosCondicionais {
 //        String usuarioCorreto = "admin";
 //        int senhaCorreta = 1234;
 //
-//        if (usuario != usuarioCorreto && senha != senhaCorreta) {
+//        if (!usuario.equals(usuarioCorreto) || senha != senhaCorreta) {
 //            System.out.println("Usuario ou senha incorreto.");
 //        }else{
 //            System.out.println("Bem vindo ao sistema.");
@@ -209,7 +207,7 @@ public class exerciciosCondicionais {
 //        System.out.println("Voce tem carteira ? Responda com 1 para sim 2 para nao");
 //        int carteira = scanner.nextInt();
 //
-//        if (idade < 18 && carteira == 2) {
+//        if (idade < 18 || carteira == 2) {
 //            System.out.println("Voce não pode dirigir.");
 //        }else {
 //            System.out.println("Voce pode dirigir");
