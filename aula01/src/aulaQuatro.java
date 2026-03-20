@@ -3,34 +3,35 @@ import java.util.Scanner;
 
 public class aulaQuatro {
     public static void main(String[] args) {
-//
-//        //Condicionais
-//        int idade = 22;
-//        boolean documento = false;
-//
-//        if (idade >= 18 && documento == true) {
-//            System.out.println("Pode entrar na balada" );
-//        }else {
-//            System.out.println("Não pode entra na balada");
-//        }
+
+        //Condicionais
+
+        int idade = 22;
+        boolean documento = false;
+
+        if (idade >= 18 && documento == true) {
+            System.out.println("Pode entrar na balada" );
+        }else {
+            System.out.println("Não pode entra na balada");
+        }
 
         Scanner scanner = new Scanner(System.in);
 
-//        System.out.print("Digite um numero");
-//        int numeroUsuario = scanner.nextInt();
-//
-//
-//        // Processamento de dados
-//
-//        if (numeroUsuario > 0) {
-//            System.out.println("Numero positivo");
-//        } else if (numeroUsuario < 0) {
-//            System.out.println("Numero negativo");
-//        }else {
-//            System.out.println("Numero zero");
-//        }
+        System.out.print("Digite um numero");
+        int numeroUsuario = scanner.nextInt();
 
-        // IMC
+
+        // Processamento de dados
+
+        if (numeroUsuario > 0) {
+            System.out.println("Numero positivo");
+        } else if (numeroUsuario < 0) {
+            System.out.println("Numero negativo");
+        }else {
+            System.out.println("Numero zero");
+        }
+
+       //  IMC
 
         System.out.print("Digite seu peso: ");
         double pesoPessoa = scanner.nextDouble();
