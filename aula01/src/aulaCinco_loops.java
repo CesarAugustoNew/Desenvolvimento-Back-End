@@ -14,30 +14,40 @@ public class aulaCinco_loops {
 //            // bloco de codigo
 //        } while (true);
 
-        int contador = 0;
-        double media = 0;
-        double soma = 0;
+//        int contador = 0;
+//        double media = 0;
+//        double soma = 0;
 
-        while (contador < 4){
-            System.out.printf("informe a %s nota: ", contador+1);
-            double notaUsuario = sc.nextDouble();
+//        while (contador < 4){
+//            System.out.printf("informe a %s nota: ", contador+1);
+//            double notaUsuario = sc.nextDouble();
 
-            soma = notaUsuario + soma;
-            contador++;
-        }
-        media = soma / contador;
-        System.out.printf("A média do aluno é de: " + media);
+//            soma = notaUsuario + soma;
+//            contador++;
+//        }
+//        media = soma / contador;
+//        System.out.println("A média do aluno é de: " + media);
 
-        if (media >= 7){
-            System.out.println("Aprovado");
-        } else if (media >= 4 && media <= 6) {
-            System.out.println("Recuperação");
-        }else {
-            System.out.println("Reprovado");
-        }
+//        if (media >= 7){
+//            System.out.println("Aprovado");
+//        } else if (media >= 4 && media < 7) {
+//            System.out.println("Recuperação");
+//        }else {
+//            System.out.println("Reprovado");
+//        }
 
 
 
+
+//        int incremento = 0;
+//        do{
+//            System.out.println(incremento);
+//            incremento++;
+//        } while (incremento < 4);
+
+//        for (int i =0; i <= 5; i++){
+//            System.out.println(i);
+//        }
 
     }
 }
