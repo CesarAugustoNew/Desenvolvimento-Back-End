@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class aulaCinco_loops {
+public class aulaCincoLoops {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -48,6 +48,13 @@ public class aulaCinco_loops {
 //        for (int i =0; i <= 5; i++){
 //            System.out.println(i);
 //        }
+        System.out.printf("Digite um valor a ser multiplicado: ");
+        int numeroMultiplicado = sc.nextInt();
+
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(numeroMultiplicado + " x " + i + " = " + numeroMultiplicado*i );
+        }
 
     }
 }
