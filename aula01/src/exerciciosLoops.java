@@ -12,9 +12,11 @@ public class exerciciosLoops {
 
         // 2  Contagem regressiva (while)
 
-    //    for (int i = 10; i >= 0; i--) {
-    //        System.out.println(i);
-    //    }
+//        int i = 10;
+//        while (i >= 0) {
+//            System.out.println(i);
+//            i--;
+//        }
 
         // 3 Exiba os números pares de 0 até 20.
 
@@ -22,6 +24,7 @@ public class exerciciosLoops {
     //        if (i % 2 == 0) {
     //            System.out.println(i);
     //        }
+    //    }
 
 
         // 4 Some os números de 1 até 100
@@ -29,8 +32,8 @@ public class exerciciosLoops {
 //        int soma = 0;
 //        for (int i = 1; i <= 100; i++) {
 //            soma = soma + i;
-//            System.out.println(soma);
 //        }
+//        System.out.println("Soma total: " + soma);
 
         // Exercício 5 — Tabuada
 //        System.out.printf("Digite um valor para ver a tabuada: ");
@@ -43,18 +46,19 @@ public class exerciciosLoops {
 
         //  Exercício 6 — Contador com do-while
 //        int contador = 0;
-//        while (contador < 5) {
-//            System.out.println(contador+1);
+//
+//        do {
+//            System.out.println(contador + 1);
 //            contador++;
-//        }
+//        } while (contador < 5);
 
         // 7 Exercício 7 — Soma de pares
 //        int soma = 0;
 //        for (int i = 0; i <= 50; i++){
 //            if (i % 2 == 0) {
 //                soma = soma + i;
-//                System.out.println(soma);
 //            }
+//            System.out.println(soma);
 //        }
 
 //        System.out.println("Digite o numero a ser fatorado: ");
@@ -63,21 +67,22 @@ public class exerciciosLoops {
 //        int total = 1;
 //
 //        for (int i = 1; i <= fatorial; i++) {
-//            total = total * i;
+//            total *= i;
 //        }
+//
 //        System.out.println("O fatorial é: " + total);
 
 
         // Exercício 9 — Média de valores
 //        double soma = 0;
 //
-//        for (int i = 1; i <= 3; i++){
+//        for (int i = 1; i <= 10; i++){
 //            System.out.println("Digite 10 numeros para calcular a media deles: ");
 //            double numerosDitados = sc.nextDouble();
 //            soma = soma + numerosDitados;
 //
 //        }
-//            double media = soma / 3;
+//            double media = soma / 10;
 //
 //            System.out.println("A media dos 10 numeros digitados é: " + media);
 
@@ -130,17 +135,22 @@ public class exerciciosLoops {
 //        boolean menu = true;
 //
 //        while (menu) {
-//            System.out.println("Digite um numero: ");
+//            System.out.println("1. Ola");
+//            System.out.println("2. Digitar numero");
+//            System.out.println("0. Sair");
+//
 //            int escolha = sc.nextInt();
 //
-//            System.out.println("1. Ola");
-//            System.out.println("2. "+ escolha);
-//            System.out.println("Digite 0 para Sair");
-//
-//            if (escolha == 0) {
+//            if (escolha == 1) {
+//                System.out.println("Olá!");
+//            } else if (escolha == 2) {
+//                System.out.println("Digite um numero: ");
+//                int numero = sc.nextInt();
+//                System.out.println("Você digitou: " + numero);
+//            } else if (escolha == 0) {
 //                menu = false;
 //            }
-
+//        }
       //   Desafio Final — Jogo de Adivinhação
 //        boolean acertou = true;
 //        int tentativasUsuario = 0;
