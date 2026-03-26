@@ -9,23 +9,26 @@ public class GerenciadorNomes {
         //DELETE = DELETAR = METODOS = AÇÕES = RETORNOS
     String[] nomes = new String[3];
 
-
     int pessoas = 0;
 
     public void CadastrarUsuario() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Informe o nome do usuario");
 
-        String nomeInformado = sc.next();
+        System.out.println("quantos usuários você quer cadastrar? ");
+        int quantidadeNomes = sc.nextInt();
 
-        if (pessoas < nomes.length) {
-            nomes[pessoas] = nomeInformado;
-            pessoas++;
-            System.out.println("Usuario cadastrado");
-        } else {
-            System.out.println("Lista cheia");
+        nomes = new String[quantidadeNomes];
+
+
+        for (int i = 0; i < nomes.length; i++) {
+            System.out.printf("\ninforme o %s nome: ", i+1);
+
+            String nomeInformado = sc.next();
+
+            nomes[i] = nomeInformado;
         }
 
+        System.out.println("Usuário cadastrado com sucesso!");
     }
 
     public void ListarUsuarios() {
