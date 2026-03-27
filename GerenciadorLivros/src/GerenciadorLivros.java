@@ -4,7 +4,7 @@ public class GerenciadorLivros {
 
     ArrayList<String> listaLivros = new ArrayList<>();
 
-    public void CadastrarLivro(String nomeLivro){
+    public void cadastrarLivro(String nomeLivro){
 
         try {
 
@@ -21,7 +21,7 @@ public class GerenciadorLivros {
         }
     }
 
-    public void ListarLivro(){
+    public void listarLivro(){
         try {
 
             for (String livro : listaLivros) {
@@ -37,7 +37,7 @@ public class GerenciadorLivros {
         }
     }
 
-    public void AtualizarLivro(String nomeAntigo, String nomeNovo){
+    public void atualizarLivro(String nomeAntigo, String nomeNovo){
         try {
 
             int indice = listaLivros.indexOf(nomeAntigo);
@@ -54,7 +54,7 @@ public class GerenciadorLivros {
         }
     }
 
-    public void DeletarLivro(String deletarLivro){
+    public void deletarLivro(String deletarLivro){
         try {
 
             if (listaLivros.remove(deletarLivro)) {

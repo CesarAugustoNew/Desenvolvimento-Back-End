@@ -73,12 +73,12 @@ public class Main {
                     System.out.println("Informe o nome do livro: ");
                     String nomeLivro = sc.nextLine();
 
-                    gLivros.CadastrarLivro(nomeLivro);
+                    gLivros.cadastrarLivro(nomeLivro);
                     break;
 
                 case 2:
                     System.out.println("---Lista de livros---");
-                    gLivros.ListarLivro();
+                    gLivros.listarLivro();
                     break;
 
                 case 3:
@@ -89,7 +89,7 @@ public class Main {
                     System.out.println("Digite o novo nome do livro: ");
                     String nomeNovo = sc.nextLine();
 
-                    gLivros.AtualizarLivro(nomeAntigo, nomeNovo);
+                    gLivros.atualizarLivro(nomeAntigo, nomeNovo);
                     break;
 
                 case 4:
@@ -97,7 +97,7 @@ public class Main {
                     System.out.println("Digite o nome do livro a ser deletado: ");
                     String livroDeletado = sc.nextLine();
 
-                    gLivros.DeletarLivro(livroDeletado);
+                    gLivros.deletarLivro(livroDeletado);
                     break;
 
                 case 5:
