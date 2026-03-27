@@ -4,72 +4,82 @@ public class GerenciadorLivros {
 
     ArrayList<String> listaLivros = new ArrayList<>();
 
-    public void cadastrarLivro(String nomeLivro){
-
+    public void cadastrarLivro(String nomeLivro) {
         try {
-
-            if (listaLivros.contains(nomeLivro)) {
-                System.out.println("Esse livro já está cadastrado");
-                return;
-            }
-
-            listaLivros.add(nomeLivro);
-            System.out.printf("\nO livro: %s foi cadastrado com sucesso", nomeLivro);
-
-        } catch (Exception e) {
-            System.out.println("Erro ao cadastrar livro: " + e);
-        }
-    }
-
-    public void listarLivro(){
-        try {
-
+            // verificar duplicado sem contains
             for (String livro : listaLivros) {
-                if (listaLivros != null) {
-                    System.out.println(livro);
-                }else {
-                    System.out.println("Lista de livro vazia");
+                if (livro.equals(nomeLivro)) {
+                    System.out.println("\nEsse livro já está cadastrado");
+                    return;
                 }
             }
 
+            listaLivros.add(nomeLivro);
+            System.out.printf("\nO livro: %s foi cadastrado com sucesso\n", nomeLivro);
+
         } catch (Exception e) {
-            System.out.println("Erro ao listar livros" + e);
+            System.out.println("\nErro ao cadastrar livro: " + e);
         }
     }
 
-    public void atualizarLivro(String nomeAntigo, String nomeNovo){
+    public void listarLivro() {
         try {
+            // verificar se está vazia sem isEmpty
+            if (listaLivros.size() == 0) {
+                System.out.println("\nLista de livros vazia");
+                return;
+            }
 
-            int indice = listaLivros.indexOf(nomeAntigo);
-
-            if (indice != -1) {
-                listaLivros.set(indice, nomeNovo);
-                System.out.println("Livro atualizado com sucesso");
-            } else {
-                System.out.println("Livro não encontrado");
+            for (String livro : listaLivros) {
+                System.out.println(livro);
             }
 
         } catch (Exception e) {
-            System.out.println("Erro ao atualizar livro: " + e);
+            System.out.println("\nErro ao listar livros: " + e);
         }
     }
 
-    public void deletarLivro(String deletarLivro){
+    public void atualizarLivro(String nomeAntigo, String nomeNovo) {
         try {
+            boolean encontrado = false;
 
-            if (listaLivros.remove(deletarLivro)) {
-                System.out.println("Livro deletado com sucesso");
-            } else {
-                System.out.println("Livro não encontrado");
+            for (int i = 0; i < listaLivros.size(); i++) {
+                if (listaLivros.get(i).equals(nomeAntigo)) {
+                    listaLivros.set(i, nomeNovo);
+                    encontrado = true;
+                    System.out.println("\nLivro atualizado com sucesso");
+                    break;
+                }
+            }
+
+            if (!encontrado) {
+                System.out.println("\nLivro não encontrado");
             }
 
         } catch (Exception e) {
-            System.out.println("Livro não encontrado" + e);
+            System.out.println("\nErro ao atualizar livro: " + e);
         }
     }
 
+    public void deletarLivro(String deletarLivro) {
+        try {
+            boolean removido = false;
 
+            for (int i = 0; i < listaLivros.size(); i++) {
+                if (listaLivros.get(i).equals(deletarLivro)) {
+                    listaLivros.remove(i);
+                    removido = true;
+                    System.out.println("\nLivro deletado com sucesso");
+                    break;
+                }
+            }
 
+            if (!removido) {
+                System.out.println("\nLivro não encontrado");
+            }
 
-
+        } catch (Exception e) {
+            System.out.println("\nErro ao deletar livro: " + e);
+        }
+    }
 }
